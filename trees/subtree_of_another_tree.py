@@ -10,6 +10,7 @@ class TreeNode:
 
 class Solution:
     def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
+        # Reuse same tree
         def same(t1, t2):
             if not t1 or not t2:
                 return not t1 and not t2
